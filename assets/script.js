@@ -72,5 +72,5 @@ var generate = function(){
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-generateBtn.addEventListener("click", charset);
+generateBtn.addEventListener("click", charset); //starts process on button click
 passwordText.value = "Press generate to make a new password" //default Password textbox text
