@@ -8,6 +8,7 @@ var passMax = 128 //maximum password length
 var passMin = 8 //minimum password length
 var length //variable to be used for password length
 var pass =""//string for password
+var passwordText = document.querySelector("#password")
 
 var passlength = function(){ //function to ask user for a password length
   let Plength= prompt("How long of a password would you like?") //input from user
@@ -63,31 +64,13 @@ var random = function(x){ //picks a random number with input variable being the 
 var generate = function(){
   for(let i=0; i<length; i++){ //loops up to the length required
     pass=pass+chars[random(chars.length)] //concats the character at a random (picked by the random function above) index poisiton in the character array into the working password file 
-    console.log(pass) //test item, displays the password
   }
+  passwordText.value = pass; //print password to the textbox so the user can copy it
 }
 
 
-charset() //test function, runs the charset function on reload 
-// var generatePassword = function(){
-  //run charset() yep
-  //Select types of characters yep
-  //select lenght yep
-  //for loop with array of characters to pick from NOPE
-  //return password
-// }
-
 // Assignment Code
-// var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", charset);
+passwordText.value = "Press generate to make a new password" //default Password textbox text
