@@ -21,8 +21,7 @@ var passlength = function(){ //function to ask user for a password length
       alert("Password length must be between " + passMin + " & " + passMax + " characters") // alerts user to the need to adjust password length
       passlength() // restarts function
     } else { //if input is a number between min and max password length
-      console.log("Length locked in")
-      return generate()
+      return generate() //run the generate function
     }
   }
 }
@@ -33,7 +32,6 @@ var charCheck = function(){ //checks the user has added characters to the workin
     charset() //restarts the function to select character to be used
   }else{ //if the working character array is not empty
     passlength() //runs function to request a password lenght
-    console.log("Characters selected")
   }}
 
 var charset = function(){ // function to ask user which characters to be used
