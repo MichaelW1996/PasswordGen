@@ -6,7 +6,7 @@
 
 <br>
 
-Link to live site: https://github.com/MichaelW1996/PasswordGen
+Link to live site: https://michaelw1996.github.io/PasswordGen/
 
 <br>
 
@@ -79,25 +79,27 @@ Javascript:
 
 Screenshot of deployed site:
 
-![Live](Assets/Images/LiveSite.png)
+![Live](assets/Images/LiveSite.png)
 
 User inputs:
 
-![Confirm](Assets/Images/Confirm.png)
+![Confirm](assets/Images/Confirm.png)
 
-![Number input](Assets/Images/Length%20Prompt.png)
+![Number input](assets/Images/Length%20Prompt.png)
 
 
 Failed State:
 
-![Failed on characters](Assets/Images/Failed.png)
+![Failed on characters](assets/Images/Failed.png)
 
-![Failed length](Assets/Images/FailedLength.png)
+![Failed on length input](assets/Images/Failed%20Number.PNG)
+
+![Failed length](assets/Images/FailedLength.png)
 
 
 Result:
 
-![Password](Assets/Images/Password.png)
+![Password](assets/Images/Password.png)
 
 
 Coded by Michael Walters
